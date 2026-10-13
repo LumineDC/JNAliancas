@@ -1,0 +1,8 @@
+/target/
+/data/
+*.war
+/JNAliancasWeb.bundle
+/.idea/
+/.netbeans/
+*.iml
+.DS_Store

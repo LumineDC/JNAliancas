@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pagamento – JN Alianças</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head>
+<body data-page="cadastro" data-entity="pagamentos">
+<a class="pular" href="#conteudo">Ir para o conteúdo</a>
+<header class="topo"><div class="topo-in"><a class="marca" href="menu.html"><svg width="42" height="28" viewBox="0 0 48 32" aria-hidden="true"><circle cx="17" cy="16" r="11" fill="none" stroke="#E1A253" stroke-width="3.5"/><circle cx="31" cy="16" r="11" fill="none" stroke="#F3D9A4" stroke-width="3.5"/></svg><span>JN Alianças</span></a><nav aria-label="Módulos"><a href="produtos.html">Produtos</a><a href="clientes.html">Clientes</a><a href="pedidos.html">Pedidos</a><a href="estoque.html">Estoque</a><a href="agendamentos.html">Agendamento</a><a href="busca.html">Busca</a><a href="vendas.html">Vendas</a><a href="pagamentos.html" aria-current="page">Pagamento</a><a href="entregas.html">Entrega</a></nav><a class="sair" href="index.html" data-sair>Sair</a></div></header>
+<main id="conteudo" class="pagina">
+<div class="titulo"><p class="trilha"><a href="menu.html">Início</a> / <a href="pagamentos.html">Pagamento</a></p><h1>Pagamento</h1></div>
+<section class="cartao"><h2>Informe os dados abaixo:</h2>
+<form id="f" novalidate data-ok="Pagamento registrado com sucesso!" data-lista="pagamentos-lista.html">
+<div class="grade">
+<div class="campo"><label for="cliente">Cliente: <span class="req" aria-hidden="true">*</span></label><input id="cliente" name="cliente" type="text" autocomplete="off" data-v="cliente" required list="dl-clientes"></div>
+<div class="campo"><label for="valor">Valor total: <span class="req" aria-hidden="true">*</span></label><input id="valor" name="valor" type="text" autocomplete="off" data-v="valor" placeholder="00.00" required></div>
+<div class="campo"><label for="tipo">Selecione o tipo de pagamento:</label><select id="tipo" name="tipo"><option>Dinheiro</option><option>Débito</option><option>Crédito</option><option>Pix</option></select></div>
+<div class="campo"><label for="pago">Valor pago: <span class="req" aria-hidden="true">*</span></label><input id="pago" name="pago" type="text" autocomplete="off" data-v="valor" placeholder="00.00" required></div>
+</div>
+<p class="nota">*Campo obrigatório</p>
+<div class="acoes"><button class="btn" id="salvar">Salvar</button><a class="btn claro" href="pagamentos.html">Voltar</a></div>
+</form><datalist id="dl-clientes" data-src="clientes"></datalist></section>
+</main>
+<footer class="rodape-site">JN Alianças · Sistema de vendas</footer>
+<script src="js/app.js"></script>
+</body>
+</html>

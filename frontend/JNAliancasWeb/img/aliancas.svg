@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice">
+<defs>
+<radialGradient id="bg" cx="68%" cy="42%" r="80%"><stop offset="0" stop-color="#4A3E30"/><stop offset=".5" stop-color="#241F1A"/><stop offset="1" stop-color="#121110"/></radialGradient>
+<linearGradient id="ouro" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FBE9BE"/><stop offset=".3" stop-color="#E8B060"/><stop offset=".62" stop-color="#A96F27"/><stop offset=".85" stop-color="#E3AC5C"/><stop offset="1" stop-color="#F6D898"/></linearGradient>
+<linearGradient id="ouro2" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F8E2B0"/><stop offset=".35" stop-color="#D79A48"/><stop offset=".7" stop-color="#8F5B1E"/><stop offset="1" stop-color="#DCA458"/></linearGradient>
+<linearGradient id="parede" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2B1C0B"/><stop offset="1" stop-color="#7A4D18"/></linearGradient>
+<filter id="desfoque" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="18"/></filter>
+<filter id="suave"><feGaussianBlur stdDeviation="1.2"/></filter>
+<g id="estrela"><path d="M0-22 3-3 22 0 3 3 0 22-3 3-22 0-3-3Z" fill="#fff"/></g>
+<mask id="m1"><circle cx="0" cy="-10" r="132" fill="#fff"/><circle cx="0" cy="26" r="132" fill="#000"/></mask>
+<mask id="m2"><circle cx="0" cy="-9" r="116" fill="#fff"/><circle cx="0" cy="22" r="116" fill="#000"/></mask>
+</defs>
+<rect width="1200" height="700" fill="url(#bg)"/>
+<ellipse cx="830" cy="590" rx="360" ry="46" fill="#000" opacity=".55" filter="url(#desfoque)"/>
+<!-- aliança menor (atrás) -->
+<g transform="translate(980 395) rotate(14) scale(1 .6)">
+ <circle cx="0" cy="-9" r="116" fill="url(#parede)" mask="url(#m2)"/>
+ <path fill-rule="evenodd" fill="url(#ouro2)" d="M-150 0a150 150 0 1 0 300 0a150 150 0 1 0 -300 0ZM-116-9a116 116 0 1 0 232 0a116 116 0 1 0 -232 0Z"/>
+ <path d="M-138 40A150 150 0 0 0 138 40" fill="none" stroke="#FFF3D2" stroke-width="3" opacity=".55" filter="url(#suave)"/>
+</g>
+<!-- aliança maior (frente) -->
+<g transform="translate(770 365) rotate(-18) scale(1 .6)">
+ <circle cx="0" cy="-10" r="132" fill="url(#parede)" mask="url(#m1)"/>
+ <path fill-rule="evenodd" fill="url(#ouro)" d="M-172 0a172 172 0 1 0 344 0a172 172 0 1 0 -344 0ZM-132-10a132 132 0 1 0 264 0a132 132 0 1 0 -264 0Z"/>
+ <path d="M-158 52A172 172 0 0 0 150 66" fill="none" stroke="#FFF6DC" stroke-width="4" opacity=".6" filter="url(#suave)"/>
+ <path d="M-120-92A140 140 0 0 1 20-142" fill="none" stroke="#fff" stroke-width="3" opacity=".35" filter="url(#suave)"/>
+</g>
+<use href="#estrela" transform="translate(640 250) scale(.9)" opacity=".8"/>
+<use href="#estrela" transform="translate(1010 250) scale(.55)" opacity=".7"/>
+<use href="#estrela" transform="translate(900 205) scale(.4)" opacity=".6"/>
+</svg>
